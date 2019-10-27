@@ -1,0 +1,37 @@
+﻿#include "Scene.h"
+
+
+Scene::Scene()
+{
+
+}
+
+Scene::~Scene()
+{
+	delete objManager;
+}
+
+//Load Data Game
+void Scene::Init(Graphic* graphic)
+{
+	objManager = new ObjectManager();
+	objManager->Init(graphic);
+}
+
+//Update Game sau khoảng thời gian dt
+void Scene::Update(float dt, Keyboard* key)
+{
+	objManager->Update(dt, key);
+}
+
+//Update Game sau khoảng thời gian dt
+void Scene::Update(float dt, Keyboard* key, Mouse* mouse)
+{
+	objManager->Update(dt, key, mouse);
+}
+
+//Vẽ Object lên màn hình
+void Scene::Render()
+{
+	objManager->Render();
+}

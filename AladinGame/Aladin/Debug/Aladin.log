@@ -1,0 +1,65 @@
+﻿  Collision.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(18): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(20): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(23): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(25): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(64): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(65): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(69): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(70): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(75): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(76): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(80): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\collision.cpp(81): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+  Game.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\game.cpp(150): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  Graphic.cpp
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\graphic.cpp(168): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Keyboard.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Mouse.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\mouse.cpp(79): warning C4244: 'return': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\mouse.cpp(85): warning C4244: 'return': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\mouse.cpp(91): warning C4244: 'return': conversion from 'LONG' to 'float', possible loss of data
+  Object.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(29): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(30): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(31): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(32): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(45): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(46): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(47): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\object.cpp(48): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+  ObjectManager.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Scene.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Sprite.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\sprite.cpp(23): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\sprite.cpp(24): warning C4244: '=': conversion from 'UINT' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\sprite.cpp(29): warning C4244: 'argument': conversion from 'UINT' to 'FLOAT', possible loss of data
+  SpriteSheet.cpp
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(66): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(67): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(68): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(69): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(84): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(85): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(92): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\spritesheet.cpp(93): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+  Text.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  WinMain.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\winmain.cpp(8): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  Generating Code...
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\game.cpp(76): warning C4715: 'Game::InitWindow': not all control paths return a value
+  Aladin.vcxproj -> C:\Users\HaiApple.Com\Desktop\Aladin\AladinGame\Debug\Aladin.exe

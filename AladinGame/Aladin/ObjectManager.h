@@ -1,0 +1,27 @@
+﻿#pragma once
+#include "Graphic.h"
+#include "Keyboard.h"
+#include "Mouse.h"
+#include "Text.h"
+
+class ObjectManager
+{
+protected:
+	
+	
+	
+public:
+	ObjectManager();
+	~ObjectManager();
+
+	void Init(Graphic* graphic);
+
+	//Update Game sau khoảng thời gian dt
+	void Update(float dt, Keyboard* key);
+
+	//Update Game sau khoảng thời gian dt
+	void Update(float dt, Keyboard* key, Mouse* mouse);
+
+	//Vẽ Object lên màn hình
+	void Render();
+};
