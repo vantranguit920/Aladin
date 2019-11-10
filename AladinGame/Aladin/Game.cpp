@@ -108,9 +108,11 @@ void Game::Init()
 {
 	InitWindow();
 	InitGraphic();
+	InitSound();
 	InitKeyboard();
 	InitMouse();
 	InitScene();
+	
 }
 
 //Vòng lặp game
@@ -162,7 +164,10 @@ void Game::Update(float dt)
 	mouse->GetStage();
 	SceneManager->Update(dt, keyboard, mouse);
 }
-
+void Game::InitSound() {
+	this->sound = new Sound(graphic->GetHwnd());
+	this->sound->Init_DirectSound();
+}
 //Vẽ các Object trong game
 void Game::Render()
 {

@@ -2,6 +2,7 @@
 #include "Sprite.h"
 #include "Mouse.h"
 #include "Collision.h"
+#include "Sound.h"
 
 class Object
 {
@@ -9,6 +10,7 @@ protected:
 	Sprite* sprite;
 	float width;		
 	float height;
+
 	D3DXVECTOR2 position;			//Vị trí vẽ
 	D3DXVECTOR2 velocity;			//Vector vận tốc
 	D3DXVECTOR2 positionStart;		//Vị trí bắt đầu
@@ -22,12 +24,13 @@ public:
 	int id;
 	enum tag
 	{
-		Ball,
+		Player,
 		Bar
 	}Tag;
-
+	
 	Object();
 	~Object();
+	void SetBound(float width, float height);
 	static tag GetTag(string name);
 	void SetTag(tag name);
 	virtual bool GetFlipFlag();

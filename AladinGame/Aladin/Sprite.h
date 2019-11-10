@@ -2,6 +2,7 @@
 #include <d3dx9.h>
 #include "Graphic.h"
 #include "Keyboard.h"
+#include "Viewport.h"
 
 class Sprite
 {
@@ -59,6 +60,6 @@ public:
 	
 	virtual void Update(float dt, Keyboard* key);
 
-	virtual void Render();
+	virtual void Render(Viewport *viewport);
 
 };

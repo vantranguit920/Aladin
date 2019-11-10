@@ -9,7 +9,7 @@ Sprite::Sprite()
 Sprite::Sprite(Graphic* graphic, const char* pathpng)
 {
 	this->graphic = graphic;
-	texture = this->graphic->LoadTexture(pathpng, D3DCOLOR_XRGB(0, 0, 0));
+	texture = this->graphic->LoadTexture(pathpng, D3DCOLOR_XRGB(255, 0, 255));
 	this->scale = D3DXVECTOR2(1, 1);
 	transform = D3DXVECTOR2(0, 0);
 	position = D3DXVECTOR2(0, 0);
@@ -121,9 +121,9 @@ void Sprite::Flip(bool flag)
 {
 	if (flag)
 	{
-		scale = D3DXVECTOR2(-1, 1);
+		scale = D3DXVECTOR2(-2.5, 2.5);
 	}
-	else scale = D3DXVECTOR2(1, 1);
+	else scale = D3DXVECTOR2(2.5, 2.5);
 }
 
 //Set giá trị chuẩn bị vẽ
@@ -142,7 +142,7 @@ void Sprite::Update(float dt, Keyboard* key)
 }
 
 //Vẽ Sprite lên màn hình
-void Sprite::Render()
+void Sprite::Render(Viewport *viewport)
 {
 	graphic->DrawTexture(texture, rect, center, position, scale, transform, angle, D3DCOLOR_XRGB(225, 225, 225));
 }

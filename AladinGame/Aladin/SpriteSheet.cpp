@@ -35,13 +35,14 @@ void SpriteSheet::ReadXML(const char* path)
 			sprite->QueryFloatAttribute("y", &this->tile[n].y);
 			sprite->QueryFloatAttribute("w", &this->tile[n].w);
 			sprite->QueryFloatAttribute("h", &this->tile[n].h);
-			sprite->QueryFloatAttribute("tX", &this->tile[n].tx);
-			sprite->QueryFloatAttribute("tY", &this->tile[n].ty);
-			sprite->QueryFloatAttribute("gX", &this->tile[n].gx);
-			sprite->QueryFloatAttribute("gY", &this->tile[n].gy);
-			sprite->QueryFloatAttribute("sX", &this->tile[n].sx);
-			sprite->QueryFloatAttribute("sY", &this->tile[n].sy);
-			//next
+			sprite->QueryFloatAttribute("pX", &this->tile[n].gx);
+			sprite->QueryFloatAttribute("pY", &this->tile[n].gy);
+			/*sprite->QueryFloatAttribute("oW", &this->tile[n].gx);
+			sprite->QueryFloatAttribute("oH", &this->tile[n].gy);*/
+				//next
+
+			this->tile[n].tx = 0;
+			this->tile[n].ty = 0;
 			n++;
 			sprite = sprite->NextSiblingElement();
 		}
@@ -84,6 +85,13 @@ D3DXVECTOR2 SpriteSheet::GetGun(int index)
 	pGun.x = tile[index].w * (tile[index].gx - 0.5);
 	pGun.y = tile[index].h * (tile[index].gy - 0.5);
 	return pGun;
+}
+
+D3DXVECTOR2 SpriteSheet::GetpXpY(int index) {
+	D3DXVECTOR2 p;
+	p.x = tile[index].gx;
+	p.y = tile[index].gy;
+	return p;
 }
 
 D3DXVECTOR2 SpriteSheet::GetSmoke(int index)

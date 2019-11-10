@@ -9,7 +9,15 @@ Object::Object()
 Object::~Object()
 {
 }
-
+void Object::SetBound(float width, float height)
+{
+	this->width = width;
+	this->height = height;
+	bound.left = position.x - width / 2;
+	bound.right = bound.left + width;
+	bound.top = position.y + height / 2;
+	bound.bottom = bound.top - height;
+}
 void Object::New()
 {
 }
@@ -54,6 +62,7 @@ float Object::GetWidth()
 {
 	return this->width;
 }
+
 void Object::SetWidth(float width)
 {
 	this->width = width;
@@ -179,7 +188,7 @@ Object::tag Object::GetTag(string name)
 {
 	if (name == "Ball")
 	{
-		return tag::Ball;
+		
 	}
 	
 	return tag::Bar;

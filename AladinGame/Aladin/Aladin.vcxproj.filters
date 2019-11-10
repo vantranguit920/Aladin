@@ -31,6 +31,9 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{8a7b0747-588e-4569-96e7-2e143a790f0b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object\Aladdin">
+      <UniqueIdentifier>{9a5b2f86-2ac7-43c8-ae0e-d2393eed21e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -77,6 +80,39 @@
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewport.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Aladdin.h">
+      <Filter>Object\Aladdin</Filter>
+    </ClInclude>
+    <ClInclude Include="AladinState.h">
+      <Filter>Object\Aladdin</Filter>
+    </ClInclude>
+    <ClInclude Include="AladdinAnimation.h">
+      <Filter>Object\Aladdin</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="dsutil.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="dxutil.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSet.h">
+      <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -133,5 +169,40 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Viewport.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Aladdin.cpp">
+      <Filter>Object\Aladdin</Filter>
+    </ClCompile>
+    <ClCompile Include="AladdinAnimation.cpp">
+      <Filter>Object\Aladdin</Filter>
+    </ClCompile>
+    <ClCompile Include="AladinState.cpp">
+      <Filter>Object\Aladdin</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="dsutil.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSet.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="AbuWaving.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
   </ItemGroup>
 </Project>

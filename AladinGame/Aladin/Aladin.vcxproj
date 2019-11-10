@@ -117,42 +117,66 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Aladdin.h" />
+    <ClInclude Include="AladdinAnimation.h" />
+    <ClInclude Include="AladinState.h" />
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="Collision.h" />
+    <ClInclude Include="dsutil.h" />
+    <ClInclude Include="dxutil.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameDefine.h" />
     <ClInclude Include="Graphic.h" />
     <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectManager.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteSheet.h" />
+    <ClInclude Include="Stage.h" />
     <ClInclude Include="Text.h" />
+    <ClInclude Include="TileSet.h" />
     <ClInclude Include="TinyXML\tinystr.h" />
     <ClInclude Include="TinyXML\tinyxml.h" />
+    <ClInclude Include="Viewport.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Aladin.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Aladdin.cpp" />
+    <ClCompile Include="AladdinAnimation.cpp" />
+    <ClCompile Include="AladinState.cpp" />
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="dsutil.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectManager.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteSheet.cpp" />
+    <ClCompile Include="Stage.cpp" />
     <ClCompile Include="Text.cpp" />
+    <ClCompile Include="TileSet.cpp" />
     <ClCompile Include="TinyXML\tinystr.cpp" />
     <ClCompile Include="TinyXML\tinyxml.cpp" />
     <ClCompile Include="TinyXML\tinyxmlerror.cpp" />
     <ClCompile Include="TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="Viewport.cpp" />
     <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="AbuWaving.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

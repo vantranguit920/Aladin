@@ -7,6 +7,7 @@ using namespace std;
 class Graphic
 {
 private:
+	static Graphic* _instance;
 	LPDIRECT3D9 d3d;
 	LPDIRECT3DDEVICE9 d3ddv;
 	
@@ -33,6 +34,7 @@ public:
 
 	//Kết thúc vẽ
 	void End();
+	static Graphic *getInstance();
 
 	//Load 1 Texture
 	LPDIRECT3DTEXTURE9 LoadTexture(string path, D3DCOLOR);

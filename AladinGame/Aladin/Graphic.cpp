@@ -1,5 +1,5 @@
 ﻿#include "Graphic.h"
-
+Graphic* Graphic::_instance = NULL;
 Graphic::Graphic(HWND hWnd, int width, int height)
 {
 	this->hWnd = hWnd;
@@ -8,8 +8,12 @@ Graphic::Graphic(HWND hWnd, int width, int height)
 	this->d3d = NULL;
 	this->d3ddv = NULL;
 	this->d3dSprite = NULL;
-}
+	this->_instance = this;
 
+}
+Graphic* Graphic::getInstance() {
+	return _instance;
+}
 Graphic::~Graphic()
 {
 }
@@ -138,7 +142,7 @@ PDIRECT3DSURFACE9 Graphic::LoadSurface(string path, D3DCOLOR transcolor)
 void Graphic::Begin()
 {
 	//Xóa cửa sổ vẽ bằng màu đen D3DCOLOR_XRGB(0, 0, 0);
-	this->d3ddv->Clear(1, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1, NULL);
+	this->d3ddv->Clear(1, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(176, 224, 230), 1, NULL);
 	
 	//Bắt đầu vẽ
 	this->d3ddv->BeginScene();

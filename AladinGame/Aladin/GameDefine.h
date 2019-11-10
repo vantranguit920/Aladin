@@ -7,5 +7,5 @@ namespace Define
 	const char BallPNG[] = "./Resource Files/ball.bmp";
 	const char BarPNG[] = "./Resource Files/racket.png";
 
-	const float RunSpeed = 3.0f;
+	const float RunSpeed = 3.0f; 
 }

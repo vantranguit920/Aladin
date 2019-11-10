@@ -3,6 +3,7 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "ObjectManager.h"
+#include "Sound.h"
 
 class Scene
 {

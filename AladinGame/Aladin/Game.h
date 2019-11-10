@@ -4,6 +4,7 @@
 #include "Keyboard.h"
 #include "Scene.h"
 #include "Mouse.h"
+#include "Sound.h"
 
 class Game
 {
@@ -23,7 +24,7 @@ private:
 	Keyboard* keyboard;		//Khai báo đối tượng Keyboard
 
 	Mouse* mouse;			//Khái báo đối tượng Mouse
-
+	Sound* sound;
 	Scene* SceneManager;
 
 public:
@@ -45,6 +46,7 @@ public:
 	//Tạo SceneManager
 	void InitScene();
 
+	void InitSound();
 	//Load Data Game
 	void Init();
 
