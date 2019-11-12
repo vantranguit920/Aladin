@@ -9,7 +9,7 @@ TileSet::TileSet(Graphic* graphic, TiXmlElement *node)
 {
 	ReadXML(node);
 
-	sprite = new Sprite(graphic, "team1.jpg");
+	sprite = new Sprite(graphic, "aladin.png");
 	for (int i = 0; i < tileCount; i++)
 	{
 
@@ -45,7 +45,7 @@ int TileSet::GetId()
 //Vẽ tile 
 void TileSet::Render(Viewport* view, int id, D3DXVECTOR2 position)
 {
-	sprite->SetRect(rect_tile[id]);
+	sprite->SetRect(rect_tile[id-1]);
 	sprite->SetPosition(position);
 	sprite->Render(view);
 }

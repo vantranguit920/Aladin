@@ -1,1 +1,10 @@
-﻿  Aladin.vcxproj -> C:\Users\HaiApple.Com\Desktop\Aladin\AladinGame\Debug\Aladin.exe
+﻿  Map.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(83): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(84): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(89): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(90): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(103): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(107): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladin\aladingame\aladin\map.cpp(108): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+  Aladin.vcxproj -> C:\Users\HaiApple.Com\Desktop\Aladin\AladinGame\Debug\Aladin.exe

@@ -12,7 +12,7 @@ AladinState::AladinState(Object *Aladdin)
 
 	this->sound = new Sound(Graphic::getInstance()->GetHwnd());
 	this->sound->Init_DirectSound();
-	
+
 	this->attacksound = this->sound->LoadSound("./Sound/Low_Sword.wav");
 
 }
@@ -23,12 +23,12 @@ AladinState::State AladinState::GetState() {
 void AladinState::CheckSide(Keyboard* keyboard) {
 	if (keyboard->IsKeyDown(DIK_RIGHT))
 	{
-		Aladdin->SetVelocityX(2.0f);
+		Aladdin->SetVelocityX(2.5f);
 		Aladdin->SetFlipFlag(false);
 	}
 	else if (keyboard->IsKeyDown(DIK_LEFT))
 	{
-		Aladdin->SetVelocityX(-2.0f);;
+		Aladdin->SetVelocityX(-2.5f);;
 		Aladdin->SetFlipFlag(true);
 	}
 	else Aladdin->SetVelocityX(0);
@@ -41,9 +41,12 @@ void AladinState::StandState(Keyboard *key) {
 	if (key->IsKeyDown(DIK_RIGHT) || key->IsKeyDown(DIK_LEFT))
 	{
 		this->state = AladinState::State::run;
-		
+		if (key->IsKeyDown(DIK_C)) {
+			this->state = State::jum;
+		}
+
 	}
-	else 
+	else
 	{
 		if (key->IsKeyDown(DIK_X)) {
 
@@ -55,26 +58,58 @@ void AladinState::StandState(Keyboard *key) {
 		{
 
 
-			if (attack)
-			{
-				this->state = AladinState::State::Attack;
+			if (key->IsKeyDown(DIK_C)) {
+				this->state = State::jum;
 			}
 			else
 			{
-				this->state = State::Standing;
+
+
+				if (attack)
+				{
+					this->state = AladinState::State::Attack;
+				}
+				else
+				{
+					this->state = State::Standing;
+				}
+
+
 			}
-
-
 		}
 	}
 
-	
+
 
 }
+void AladinState::jumState(Keyboard* key) {
+	if (!isjum) {
+		startJum = Aladdin->GetPosition().y;
+		Aladdin->SetVelocityY(5);
+		isjum = true;
+	}
+
+	if (isjum) {
+		if (Aladdin->GetPosition().y-startJum  > 200) {
+			Aladdin->SetVelocityY(-5);
+			this->state = State::fall;
+			isjum = false;
+		}
+	}
+	
+}
+void AladinState::fallState(Keyboard* key) {
+	if (Aladdin->GetPosition().y == startJum) {
+		Aladdin->SetVelocityY(0);
+		this->state = State::Standing;
+	}
+}
+
+
 
 void AladinState::AttackState(Keyboard *key) {
 
-	
+
 	if (!this->attack) {
 		switch (this->state)
 		{
@@ -82,11 +117,11 @@ void AladinState::AttackState(Keyboard *key) {
 			StandState(key);
 			break;
 		}
-		
+
 	}
 
 	if (key->GIsKeyDown(DIK_X)) {
-		
+
 		this->sound->PlaySoundA(attacksound);
 	}
 
@@ -96,7 +131,7 @@ void AladinState::RunState(Keyboard *key) {
 	if (key->IsKeyDown(DIK_RIGHT) || key->IsKeyDown(DIK_LEFT))
 	{
 		this->state = State::run;
-		
+
 	}
 	else
 	{
@@ -114,14 +149,14 @@ void AladinState::Update(float dt, Keyboard* keyboard) {
 	{
 
 		delayattacktime += dt;
-		
-		if (delayattacktime > 0.6f)
+
+		if (delayattacktime > 0.42f)
 		{
 			printf("%f\n", dt);
 			attack = false;
 			delayattack = false;
 			delayattacktime = 0;
-			
+
 		}
 	}
 }

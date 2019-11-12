@@ -13,18 +13,18 @@ void AladdinAnimation::standAnimation() {
 
 
 void AladdinAnimation::jumpAnimation() {
-	repeat = true;
-	delay = 20;
+	repeat = false;
+	delay = 5;
 	start = 0; end = 4;
 }
 void AladdinAnimation::fallAnimation() {
-	repeat = true;
-	delay = 20;
+	repeat = false;
+	delay = 10;
 	start = 5; end = 9;
 }
 void AladdinAnimation::runAnimation() {
 	repeat = true;
-	delay = 7;
+	delay = 5;
 	start = 18; end = 28;
 }
 void AladdinAnimation::stopAnimation() {
@@ -34,7 +34,7 @@ void AladdinAnimation::stopAnimation() {
 }
 void AladdinAnimation::attackAnimation() {
 	repeat = true;
-	delay = 7;
+	delay = 5;
 	start = 38; end = 42;
 }
 void AladdinAnimation::throwAnimation() {
@@ -105,7 +105,7 @@ void AladdinAnimation::climbVerticalJumpAnimation() {
 void AladdinAnimation::climbVerticalFallAnimation() {
 	repeat = true;
 	delay = 20;
-	start = 142; end = 147;
+	start = 138; end = 141;
 }
 void AladdinAnimation::damageAnimation() {
 	repeat = true;

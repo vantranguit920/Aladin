@@ -6,7 +6,7 @@ Map::Map()
 
 Map::Map(Graphic* graphic)
 {
-	ReadXML(graphic, "out.tmx");
+	ReadXML(graphic,"aladin.tmx");
 	position = D3DXVECTOR2(0, 0);
 
 	RECT r;
@@ -92,24 +92,33 @@ void Map::SetData(D3DXVECTOR2 position, int data)
 }
 
 void Map::Render(Viewport * viewport)
-{
-	int startH, startW, endH, endW;
-	RECT r = viewport->GetBound();
-	startH = r.bottom / tileHeight;
-	endH = r.top / tileHeight + 1;
-	startW = r.left / tileWidth;
-	endW = r.right / tileWidth + 1;
-
-	for (int h = 0; h < 20; h++)
+{	
+	for (int h = 0; h < 64; h++)
 	{
-		for (int w = 0; w < 20; w++)
+		for (int w = 0; w < 248; w++)
 		{
 			int id = _data[h][w];
-			if (id >= 0)
+			if (id > 0)
 			{
-				D3DXVECTOR2 position((w+4)*tileWidth, (h+4)*tileHeight);
+				D3DXVECTOR2 position(w*tileWidth, h*tileHeight);
+
+				
+				RECT objRECT;
+				objRECT.left = position.x;
+				objRECT.top = position.y;
+				objRECT.right = objRECT.left + 32;
+				objRECT.bottom = objRECT.top + 32;
+				if (viewport->isContains(objRECT))
+				{
+					// Sửa chỗ này.
+					//Chỉ vẽ những tileset nằm trong camera.
+
+				}
 				tileSet->Render(viewport, id, position);
+				
+				
 			}
 		}
 	}
+	
 }

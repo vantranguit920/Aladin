@@ -121,9 +121,9 @@ void Sprite::Flip(bool flag)
 {
 	if (flag)
 	{
-		scale = D3DXVECTOR2(-2.5, 2.5);
+		scale = D3DXVECTOR2(-1.5, 1.5);
 	}
-	else scale = D3DXVECTOR2(2.5, 2.5);
+	else scale = D3DXVECTOR2(1.5, 1.5);
 }
 
 //Set giá trị chuẩn bị vẽ
@@ -139,10 +139,11 @@ void Sprite::SetData(RECT rect, D3DXVECTOR2 center, D3DXVECTOR2 position, D3DXVE
 //Vẽ sprite
 void Sprite::Update(float dt, Keyboard* key)
 {
+
 }
 
 //Vẽ Sprite lên màn hình
 void Sprite::Render(Viewport *viewport)
 {
-	graphic->DrawTexture(texture, rect, center, position, scale, transform, angle, D3DCOLOR_XRGB(225, 225, 225));
+	graphic->DrawTexture(texture, rect, center, viewport->TransformPosition(position), scale, transform, angle, D3DCOLOR_XRGB(225, 225, 225));
 }

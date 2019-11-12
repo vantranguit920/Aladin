@@ -15,10 +15,10 @@ protected:
 	D3DXVECTOR2 positionWorld;
 	float width;
 	float height;
-	RECT stage0 = { 0, 1280, 768, 1056 };
-	RECT stage = stage0;
+	/*RECT stage0 = { 0, 1280, 1768, 1056 };
+	RECT stage = stage0;*/
 	int start = 0, end = 1024;
-	int top = 1280, bottom = 1056;
+	int top = 1500, bottom = 1056;
 	bool moveBossStage = false;
 	int newStart;
 	bool inStageBoss;

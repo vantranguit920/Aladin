@@ -34,6 +34,9 @@
     <Filter Include="Object\Aladdin">
       <UniqueIdentifier>{9a5b2f86-2ac7-43c8-ae0e-d2393eed21e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Grid">
+      <UniqueIdentifier>{1c33aab5-1979-43cf-ba99-afa2728ee211}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -113,6 +116,18 @@
     </ClInclude>
     <ClInclude Include="TileSet.h">
       <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObject.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObjectGroup.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Grid</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +213,18 @@
     </ClCompile>
     <ClCompile Include="TileSet.cpp">
       <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObject.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObjectGroup.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Grid</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

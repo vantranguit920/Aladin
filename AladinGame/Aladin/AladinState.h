@@ -7,10 +7,11 @@ class AladinState
 {
 protected:
 	Object *Aladdin;
-	bool attack = false,delayattack;
+	bool attack = false,delayattack,isjum=false;
 	Sound *sound;
 	GSound *attacksound;
 	float delayattacktime = 0;
+	int startJum;
 public:
 
 	enum State
@@ -19,6 +20,8 @@ public:
 		Attack,
 		run,
 		runattack,
+		jum,
+		fall,
 	};
 	State state;
 	AladinState(Object *aladdin);
@@ -30,8 +33,8 @@ public:
 	void StandState(Keyboard* key);
 	void AttackState(Keyboard* key);
 	void RunState(Keyboard *key);
-
-
+	void jumState(Keyboard *key);
+	void fallState(Keyboard* key);
 
 
 	State GetState();

@@ -78,7 +78,7 @@ bool Game::InitWindow()
 bool Game::InitGraphic()
 {
 	//Tạo màn hình vẽ
-	this->graphic = new Graphic(this->hWnd, this->width, this->height);
+	this->graphic = new Graphic(this->hWnd, 500.0f, 500.0f);
 	if (!graphic->InitDirectX())
 	{
 		return false;
